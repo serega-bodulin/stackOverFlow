@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mainStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="find" id="sec">
+        <p class = "find__text">Поиск, братка</p>
+        <div class="find__input-block">
+            <input class="find__input" type = "text" id = "input-find" value="Can weighted data be used with the CrossTable function">
+        </div>
+        <div class = find__sort>
+            <p>Sort:</p>
+            <select id = "selection">
+                <option value="relevance">Relevance</option>
+                <option value="creation">Creation</option>
+                <option value="votes">Votes</option>
+                <option value="activity">Activity</option>
+            </select>
+         </div>
+        <button class="find__button" id = "button-find" onclick="go(), getAnswers()">Find</button>
+    </section>
+    <script src="mainjs.js"></script>
+</body>
+</html>
